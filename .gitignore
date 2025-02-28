@@ -4,6 +4,7 @@ Build/
 *.xcworkspace
 *.xcuserstate
 *.xcuserdatad*
+.xcuserdata/
 *.xcodeproj/project.xcworkspace/
 
 # Excluir arquivos temporários do sistema
