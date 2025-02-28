@@ -29,20 +29,47 @@
 		9EF5DFD22D71584300C56E67 /* TheMoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9EEB2D6C2D7239AF00DE19E7 /* Exceptions for "Tests" folder in "TheMoon" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TheMoonTests/TheMoonTests.swift,
+				TheMoonUITests/TheMoonUITests.swift,
+				TheMoonUITests/TheMoonUITestsLaunchTests.swift,
+			);
+			target = 9EF5DFB72D71584100C56E67 /* TheMoon */;
+		};
+		9EEB2D6D2D7239AF00DE19E7 /* Exceptions for "Tests" folder in "TheMoonTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TheMoonTests/TheMoonTests.swift,
+			);
+			target = 9EF5DFC72D71584300C56E67 /* TheMoonTests */;
+		};
+		9EEB2D732D7239B100DE19E7 /* Exceptions for "Tests" folder in "TheMoonUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TheMoonUITests/TheMoonUITests.swift,
+				TheMoonUITests/TheMoonUITestsLaunchTests.swift,
+			);
+			target = 9EF5DFD12D71584300C56E67 /* TheMoonUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		9EEB2D682D7239A900DE19E7 /* Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9EEB2D6C2D7239AF00DE19E7 /* Exceptions for "Tests" folder in "TheMoon" target */,
+				9EEB2D6D2D7239AF00DE19E7 /* Exceptions for "Tests" folder in "TheMoonTests" target */,
+				9EEB2D732D7239B100DE19E7 /* Exceptions for "Tests" folder in "TheMoonUITests" target */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		9EF5DFBA2D71584100C56E67 /* TheMoon */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TheMoon;
-			sourceTree = "<group>";
-		};
-		9EF5DFCB2D71584300C56E67 /* TheMoonTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TheMoonTests;
-			sourceTree = "<group>";
-		};
-		9EF5DFD52D71584300C56E67 /* TheMoonUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TheMoonUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +102,8 @@
 		9EF5DFAF2D71584100C56E67 = {
 			isa = PBXGroup;
 			children = (
+				9EEB2D682D7239A900DE19E7 /* Tests */,
 				9EF5DFBA2D71584100C56E67 /* TheMoon */,
-				9EF5DFCB2D71584300C56E67 /* TheMoonTests */,
-				9EF5DFD52D71584300C56E67 /* TheMoonUITests */,
 				9EF5DFB92D71584100C56E67 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +134,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				9EEB2D682D7239A900DE19E7 /* Tests */,
 				9EF5DFBA2D71584100C56E67 /* TheMoon */,
 			);
 			name = TheMoon;
@@ -130,9 +157,6 @@
 			dependencies = (
 				9EF5DFCA2D71584300C56E67 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				9EF5DFCB2D71584300C56E67 /* TheMoonTests */,
-			);
 			name = TheMoonTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +176,6 @@
 			);
 			dependencies = (
 				9EF5DFD42D71584300C56E67 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				9EF5DFD52D71584300C56E67 /* TheMoonUITests */,
 			);
 			name = TheMoonUITests;
 			packageProductDependencies = (
