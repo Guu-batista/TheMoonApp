@@ -1,0 +1,40 @@
+# Excluir arquivos de build
+DerivedData/
+Build/
+*.xcworkspace
+*.xcuserstate
+*.xcuserdatad*
+*.xcodeproj/project.xcworkspace/
+
+# Excluir arquivos temporários do sistema
+.DS_Store
+*.swp
+*.swo
+*.swn
+
+# Excluir pacotes do Swift Package Manager
+/.swiftpm/
+/Packages/
+/.build/
+
+# Excluir arquivos de cache do CocoaPods
+Pods/
+Podfile.lock
+
+# Excluir cache do Carthage
+Carthage/
+
+# Excluir arquivos gerados pelo Xcode
+*.mode1v3
+*.mode2v3
+*.pbxuser
+xcuserdata/
+
+# Certificados e chaves privadas (importante!)
+*.p12
+*.mobileprovision
+*.crt
+*.pem
+*.cer
+*.der
+
